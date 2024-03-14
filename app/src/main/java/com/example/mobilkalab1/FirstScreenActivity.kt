@@ -14,7 +14,6 @@ class FirstScreenActivity : AppCompatActivity() {
             setContentView(it.root)
         }
         setup()
-
     }
 
     fun setup() {
@@ -28,19 +27,18 @@ class FirstScreenActivity : AppCompatActivity() {
             toolbar.setNavigationOnClickListener {
                 onBackPressedDispatcher.onBackPressed()
             }
-
-            ivImage.setImageResource(R.drawable.kot)
+            ivImage.setImageResource(R.drawable.android)
         }
     }
 
     private fun changeImage() {
         with(binding) {
-            if (flagImage) {
-                ivImage.setImageResource(R.drawable.kot)
-                flagImage = !flagImage
+            flagImage = if (flagImage) {
+                ivImage.setImageResource(R.drawable.android)
+                !flagImage
             } else {
-                ivImage.setImageResource(R.drawable.kot2)
-                flagImage = !flagImage
+                ivImage.setImageResource(R.drawable.ios)
+                !flagImage
             }
         }
     }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/blue"
+    android:background="@color/main"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".SecondScreenActivity">
@@ -14,11 +14,11 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/white"
+        android:background="@color/main"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="?attr/homeAsUpIndicator"
         app:title="Второй экран"
-        app:titleTextColor="@color/blue_dark" />
+        app:titleTextColor="@color/white" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,6 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
+                android:background="@color/second"
                 android:orientation="vertical">
 
                 <Space
@@ -51,7 +52,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Полученный текст:"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="35sp" />
 
                 <Space
@@ -70,6 +71,7 @@
                         android:id="@+id/tv_message"
                         android:layout_gravity="fill"
                         android:textSize="20sp"
+                        android:textColor="@color/white"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:maxLines="1"

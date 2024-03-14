@@ -11,14 +11,10 @@ class SecondScreenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         text = intent?.extras?.getString(SAVED_TEXT) ?: "Пусто"
-
-
         binding = ActivitySecondScreenBinding.inflate(layoutInflater).also {
             setContentView(it.root)
         }
-
         setup()
     }
 
@@ -36,8 +32,6 @@ class SecondScreenActivity : AppCompatActivity() {
             btnBack.setOnClickListener {
                 onBackPressedDispatcher.onBackPressed()
             }
-
-
         }
     }
 

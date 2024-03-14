@@ -4,10 +4,8 @@ package com.example.mobilkalab1
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import com.example.mobilkalab1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -23,15 +21,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
-        super.onSaveInstanceState(outState, outPersistentState)
-        outState.putString(SAVED_TEXT, text)
-    }
-
-    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
-        super.onRestoreInstanceState(savedInstanceState)
-        text = savedInstanceState.getString(SAVED_TEXT).toString()
-    }
 
     private fun setup() {
         with(binding) {

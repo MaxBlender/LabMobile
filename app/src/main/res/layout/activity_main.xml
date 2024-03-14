@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/main"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
@@ -22,13 +22,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:background="@color/second"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Лабораторная работа"
-                android:textColor="@color/black"
+                android:text="Лабораторная работа 1"
+                android:textColor="@color/white"
                 android:textSize="30sp" />
 
             <Space
@@ -42,15 +43,16 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:focusedByDefault="false"
-                android:hint="Введите текст">
+                android:hint="Введите текст"
+                android:textColorHint="@color/white">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
+                    android:background="@color/third"
                     android:singleLine="true"
-                    android:textColorHint="@color/black" />
+                    android:textColorHint="@color/white" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Space
