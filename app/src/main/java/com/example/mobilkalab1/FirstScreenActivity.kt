@@ -27,17 +27,17 @@ class FirstScreenActivity : AppCompatActivity() {
             toolbar.setNavigationOnClickListener {
                 onBackPressedDispatcher.onBackPressed()
             }
-            ivImage.setImageResource(R.drawable.android)
+            ivImage.setImageResource(R.drawable.gabe)
         }
     }
 
     private fun changeImage() {
         with(binding) {
             flagImage = if (flagImage) {
-                ivImage.setImageResource(R.drawable.android)
+                ivImage.setImageResource(R.drawable.gabe)
                 !flagImage
             } else {
-                ivImage.setImageResource(R.drawable.ios)
+                ivImage.setImageResource(R.drawable.pudge)
                 !flagImage
             }
         }

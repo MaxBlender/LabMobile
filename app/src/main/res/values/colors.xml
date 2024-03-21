@@ -5,7 +5,7 @@
     <color name="blue">#87CEFA</color>
     <color name="grey">#cccccc</color>
     <color name="blue_dark">#1C1C1C</color>
-    <color name="main">#99506D</color>
-    <color name="second">#cf605f</color>
-    <color name="third">#fe994c</color>
+    <color name="main">#B1A961</color>
+    <color name="second">#CCBA84</color>
+    <color name="third">#FED24C</color>
 </resources>
